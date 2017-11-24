@@ -204,6 +204,10 @@
 			max-width: 125%;
 			min-width: 100%;
 		}
+		
+		#chatBot {
+			width: 100%;
+		}
 
 		.container.\37 5\25 {
 			width: 75%;
