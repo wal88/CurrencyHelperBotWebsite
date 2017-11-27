@@ -6,27 +6,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Currency Exchange ChatBot</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body class="index">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">Currency <span>CHATBOT</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
-							<li class="current"><a href="index.html">FAQ</a></li>
-							<li class="current"><a href="index.html">About</a></li>
-						<!--<li class="submenu">
+<head>
+	<title>Currency Exchange ChatBot</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script> -->
+</head>
+
+<body class="index">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1 id="logo"><a href="index.html">Currency <span>CHATBOT</span></a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Welcome</a></li>
+					<li class="current"><a href="index.html">FAQ</a></li>
+					<li class="current"><a href="index.html">About</a></li>
+					<!--<li class="submenu">
  								<a href="#">Layouts</a>
 								<ul>
 									<li><a href="left-sidebar.html">Left Sidebar</a></li>
@@ -44,238 +47,268 @@
 										</ul>
 									</li>
 								</ul> 
-							</li>-->
-							<li><a href="#" class="button special">Examples</a></li>
-						</ul>
-					</nav>
-				</header>
+							</li>
+							<li><a href="#" class="button special">Examples</a></li>-->
+				</ul>
+			</nav>
+		</header>
 
-			<!-- Banner -->
-				<section id="banner">
+		<!-- Banner -->
+		<section id="banner">
 
-					<!--
+			<!--
 						".inner" is set up as an inline-block so it automatically expands
 						in both directions to fit whatever's inside it. This means it won't
 						automatically wrap lines, so be sure to use line breaks where
 						appropriate (<br />).
 					-->
-					<div class="inner">
+			<div class="inner">
+
+				<header>
+					<h2>CurrencyBot</h2>
+				</header>
+				<p>I am the <strong>Currency Bot</strong>,
+					<br /> a free currency exchange
+					<br /> and management tool.
+
+
+					<!-- by <a href="http://html5up.net">HTML5 UP</a>.</p> -->
+					<footer>
+						<ul class="buttons vertical">
+							<li><a href="#main" class="button fit scrolly">Chat now</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		</section>
+
+		<!-- Main -->
+		<article id="main">
+
+			<header class="special container">
+				<span class="icon fa-bar-chart-o"></span>
+				<div class="container">
+					<iframe id="chatBot" src='https://webchat.botframework.com/embed/CurrencyExchangeChatBot?s=bDS0sFtpNPA.cwA.7ek.E_TEU3ADiuGEEnImFn2Atda4Zzxc_sMxg5x2SNzDOos'></iframe>
+				</div>
+				<h3>You can change chat window settings here:</h3>
+				<a href="javascript:decreaseTextSize()" class="button">Decrease text Size</a><a href="increaseTextSize()" class="button">Increase text Size</a>
+				<a href="#" class="button">Toggle Contrast</a>
+			</header>
+			<script>
+				function decreaseTextSize() {
+					var iframe = document.getElementById('chatBot');
+					var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+					// browser.switchTo().frame(0);
+					// var fontSize = 40;
+					// fontSize -= 2;
+					let fontSizePx = '40px';
+
+					innerDoc.getElementsByClassName('format-plain')[0].setAttribute("style", '40px');
+					// for (let text of userTexts) {
+					// userTexts[0].style['font-size'] = '40px';
+					// }
+					alert('hi')
+				}
+			</script>
+
+
+			<!-- One -->
+			<section class="wrapper style2 container special-alt">
+				<div class="row 50%">
+					<div class="8u 12u(narrower)">
 
 						<header>
-							<h2>CurrencyBot</h2>
+							<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
 						</header>
-						<p>I am the <strong>Currency Bot</strong>, 
-						<br />
-						a free currency exchange
-						<br />
-						and management tool.
-						
-						
-						<!-- by <a href="http://html5up.net">HTML5 UP</a>.</p> -->
+						<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor
+							sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices.
+							Aliquam eu elit eget arcu commodo.</p>
 						<footer>
-							<ul class="buttons vertical">
-								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+							<ul class="buttons">
+								<li><a href="#" class="button">Find Out More</a></li>
 							</ul>
 						</footer>
 
 					</div>
+					<div class="4u 12u(narrower) important(narrower)">
 
-				</section>
-
-			<!-- Main -->
-				<article id="main">
-
-					<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
-						<div class="container"><iframe id="chatBot" src='https://webchat.botframework.com/embed/CurrencyExchangeChatBot?s=bDS0sFtpNPA.cwA.7ek.E_TEU3ADiuGEEnImFn2Atda4Zzxc_sMxg5x2SNzDOos'></iframe></div>
-						<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-						<br />
-						it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-						and, like all my stuff,
-						<br />
-						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
-					</header>
-
-					<!-- One -->
-						<section class="wrapper style2 container special-alt">
-							<div class="row 50%">
-								<div class="8u 12u(narrower)">
-
-									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
-										</ul>
-									</footer>
-
-								</div>
-								<div class="4u 12u(narrower) important(narrower)">
-
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
-
-								</div>
-							</div>
-						</section>
-
-					<!-- Two -->
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Exchange Rates</h3>
-										</header>
-										<p>Get current and past exchange rates just by asking me. I can retrieve exchange rates for any two currencies, or specify the base currency and a list of currencies to get multiple quotes.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Convert Money</h3>
-										</header>
-										<p>I can convert amounts in one currency into another.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Currency holdings</h3>
-										</header>
-										<p>I can store your currencies reserves which you can update and view at any time. I can also convert all currencies held into any one desired currency and give you the total.</p>
-									</section>
-
-								</div>
-							</div>
-						</section>
-
-					<!-- Three -->
-						<section class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>Me helping people with <strong>currency queries</strong></h2>
-							</header>
-
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>A Really Fast Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>An Airport Terminal</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Hyperspace Travel</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>And Another Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-							</div>
-
-							<footer class="major">
-								<ul class="buttons">
-									<li><a href="#" class="button">See More</a></li>
-								</ul>
-							</footer>
-
-						</section>
-
-				</article>
-
-			<!-- CTA -->
-				<section id="cta">
-
-					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-					</header>
-					<footer>
-						<ul class="buttons">
-							<li><a href="#" class="button special">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
+						<ul class="featured-icons">
+							<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span>
+							</li>
+							<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span>
+							</li>
+							<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span>
+							</li>
+							<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span>
+							</li>
+							<li><span class="icon fa-lock"><span class="label">Feature 5</span></span>
+							</li>
+							<li><span class="icon fa-cog"><span class="label">Feature 6</span></span>
+							</li>
 						</ul>
-					</footer>
 
-				</section>
+					</div>
+				</div>
+			</section>
 
-			<!-- Footer -->
-				<footer id="footer">
+			<!-- Two -->
+			<section class="wrapper style1 container special">
+				<div class="row">
+					<div class="4u 12u(narrower)">
 
-					<ul class="icons">
-						<!-- <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li> -->
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<!-- <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li> -->
-						<li><a href="https://github.com/wal88/CurrencyExchangeChatBot" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<!-- <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+						<section>
+							<span class="icon featured fa-check"></span>
+							<header>
+								<h3>Exchange Rates</h3>
+							</header>
+							<p>Get current and past exchange rates just by asking me. I can retrieve exchange rates for any two currencies, or specify
+								the base currency and a list of currencies to get multiple quotes.</p>
+						</section>
+
+					</div>
+					<div class="4u 12u(narrower)">
+
+						<section>
+							<span class="icon featured fa-check"></span>
+							<header>
+								<h3>Convert Money</h3>
+							</header>
+							<p>I can convert amounts in one currency into another.</p>
+						</section>
+
+					</div>
+					<div class="4u 12u(narrower)">
+
+						<section>
+							<span class="icon featured fa-check"></span>
+							<header>
+								<h3>Currency holdings</h3>
+							</header>
+							<p>I can store your currencies reserves which you can update and view at any time. I can also convert all currencies
+								held into any one desired currency and give you the total.</p>
+						</section>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section class="wrapper style3 container special">
+
+				<header class="major">
+					<h2>Me helping people with <strong>currency queries</strong></h2>
+				</header>
+
+				<div class="row">
+					<div class="6u 12u(narrower)">
+
+						<section>
+							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<header>
+								<h3>A Really Fast Train</h3>
+							</header>
+							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique
+								purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+						</section>
+
+					</div>
+					<div class="6u 12u(narrower)">
+
+						<section>
+							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<header>
+								<h3>An Airport Terminal</h3>
+							</header>
+							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique
+								purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+						</section>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="6u 12u(narrower)">
+
+						<section>
+							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+							<header>
+								<h3>Hyperspace Travel</h3>
+							</header>
+							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique
+								purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+						</section>
+
+					</div>
+					<div class="6u 12u(narrower)">
+
+						<section>
+							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+							<header>
+								<h3>And Another Train</h3>
+							</header>
+							<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique
+								purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+						</section>
+
+					</div>
+				</div>
+
+				<footer class="major">
+					<ul class="buttons">
+						<li><a href="#" class="button">See More</a></li>
 					</ul>
-
-					<ul class="copyright">
-						<li>&copy; CurrencyBot 2017</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
 				</footer>
 
-		</div>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		</article>
 
-	</body>
+		<!-- CTA -->
+		<section id="cta">
+
+			<header>
+				<h2>Ready to do <strong>something</strong>?</h2>
+				<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+			</header>
+			<footer>
+				<ul class="buttons">
+					<li><a href="#" class="button special">Take My Money</a></li>
+					<li><a href="#" class="button">LOL Wut</a></li>
+				</ul>
+			</footer>
+
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+				<!-- <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li> -->
+				<li><a href="https://github.com/wal88/CurrencyExchangeChatBot" class="icon circle fa-github"><span class="label">Github</span></a></li>
+				<!-- <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+			</ul>
+
+			<ul class="copyright">
+				<li>&copy; CurrencyBot 2017</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollgress.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
