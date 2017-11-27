@@ -16,11 +16,8 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script> -->
-	<link href="botchat.css" rel="stylesheet" />
-</head>
-<body>
-  <div id="bot"/>
-  <script src="botchat.js"></script>
+	<link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+	<script src="assets/js/chatBoxSettings.js"></script>
 </head>
 
 <body class="index">
@@ -34,25 +31,7 @@
 					<li class="current"><a href="index.html">Welcome</a></li>
 					<li class="current"><a href="index.html">FAQ</a></li>
 					<li class="current"><a href="index.html">About</a></li>
-					<!--<li class="submenu">
- 								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li class="submenu">
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
-										</ul>
-									</li>
-								</ul> 
-							</li>
+
 							<li><a href="#" class="button special">Examples</a></li>-->
 				</ul>
 			</nav>
@@ -91,31 +70,30 @@
 		<!-- Main -->
 		<article id="main">
 
-			<header class="special container">
+			<header class="special container" id="icon">
 				<span class="icon fa-bar-chart-o"></span>
-				<div class="container">
-					<iframe id="chatBot" src='https://webchat.botframework.com/embed/CurrencyExchangeChatBot?s=bDS0sFtpNPA.cwA.7ek.E_TEU3ADiuGEEnImFn2Atda4Zzxc_sMxg5x2SNzDOos'></iframe>
-				</div>
-				<h3>You can change chat window settings here:</h3>
-				<a href="javascript:decreaseTextSize()" class="button">Decrease text Size</a><a href="increaseTextSize()" class="button">Increase text Size</a>
-				<a href="#" class="button">Toggle Contrast</a>
-			</header>
-			<script>
-				function decreaseTextSize() {
-					var iframe = document.getElementById('chatBot');
-					var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
-					// browser.switchTo().frame(0);
-					// var fontSize = 40;
-					// fontSize -= 2;
-					let fontSizePx = '40px';
 
-					innerDoc.getElementsByClassName('format-plain')[0].setAttribute("style", '40px');
-					// for (let text of userTexts) {
-					// userTexts[0].style['font-size'] = '40px';
-					// }
-					alert('hi')
-				}
-			</script>
+			</header>
+
+			<div class="chatContainer">
+				<div id="chatBot"> </div>
+				<script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+				<script>
+					BotChat.App({
+						directLine: { secret: "eoo23bUuBfM.cwA.ox4.bxClP9d9OeEBTv1EtPF0hYFxJnUlAV9C-pHnUeRD8AI" },
+						user: { id: 'userid' },
+						bot: { id: 'CurrencyExchangeChatBot' },
+						resize: ''
+					}, document.getElementById("chatBot"));
+				</script>
+				<!-- <iframe id="chatBot" src='https://webchat.botframework.com/embed/CurrencyExchangeChatBot?s=bDS0sFtpNPA.cwA.7ek.E_TEU3ADiuGEEnImFn2Atda4Zzxc_sMxg5x2SNzDOos'></iframe> -->
+			</div>
+			<header class="container" id="settings">
+				<br>
+				<h3>You can change chat window settings here:</h3>
+				<a href="javascript:decreaseTextSize()" class="button">Decrease text Size</a><a href="javascript:increaseTextSize()" class="button">Increase text Size</a>
+			</header>
+			<br>
 
 
 			<!-- One -->
