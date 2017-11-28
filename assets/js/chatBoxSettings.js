@@ -51,10 +51,3 @@ function toggleBackgroundContrast() {
 		backgroundContrastOn = false;
 	}
 }
-
-
-// Observe a specific DOM element:
-function mutationObserverCallback(mutations) {
-	
-	console.log('changeSize');
-}
