@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded',
 function (){
 	//change chatBox heading
 	document.querySelector('.wc-header>span').innerHTML = 'Currency ChatBot';
-
-
+	document.querySelector('.wc-header').style.backgroundColor = '#1E2E22';
+	
 	// check for changes of DOM Inside chat Box only
 	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 	
