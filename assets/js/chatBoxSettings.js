@@ -1,4 +1,7 @@
 var fontSize = 16; // default font size 
+var backgroundContrastOn = false;
+var defaultBackground = '#F3F6FA';
+var contrastBackground = '#1E1E1F';
 
 // do once after document loads
 document.addEventListener('DOMContentLoaded', 
@@ -39,6 +42,15 @@ function changeSize() {
 	}
 }
 
+function toggleBackgroundContrast() {
+	if (!backgroundContrastOn) {
+		document.getElementById('main').style.backgroundColor = contrastBackground;
+		backgroundContrastOn = true;
+	} else {
+		document.getElementById('main').style.backgroundColor = defaultBackground;
+		backgroundContrastOn = false;
+	}
+}
 
 
 // Observe a specific DOM element:
