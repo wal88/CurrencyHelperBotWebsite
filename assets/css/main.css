@@ -11,12 +11,13 @@
 /* Currency ChatBot */
 	#chatBot {
 		height: 500px;
-		z-index: 99999999;
+		z-index: 9;
 		position: relative;
+		resize: both;
+		overflow: auto;
 	}
 	
 	.chatContainer {
-		height: 500px;
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
@@ -24,6 +25,7 @@
 	
 	#settings {
 		text-align: center;
+		margin-top:20px;
 	}
 	
 	#main {
@@ -197,6 +199,10 @@
 			max-width: 118.75%;
 			min-width: 95%;
 		}
+		.chatContainer {
+		width: 98%;
+		}
+		
 
 		.container.\37 5\25 {
 			width: 71.25%;
